@@ -1,0 +1,353 @@
+:root {
+    --Primary-Text-Color: white;
+    --Secondary-Text-Colour: #FBD784;
+    --Background-Colour: #0B1D26;
+    --Hover-Text-Colour: rgb(191, 190, 190);
+    --Hover-Secondary-Text-Colour: #c3aa6f;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--Primary-Text-Color)
+}
+
+
+/* -------------Background-Image-------------------------------- */
+.Background-Image {
+    background-image: url(./Assests/BG!.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* -------------------Nav-Section------------------------------- */
+.Div-Container {
+    display: flex;
+    justify-content: space-between;
+    padding: 64px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.Nav-Ul {
+    display: flex;
+}
+
+.Nav-LI {
+    margin: 0px 10px;
+    list-style-type: none;
+}
+
+.Nav-LI a {
+    color: var(--Primary-Text-Color);
+    text-decoration: none;
+}
+
+.Nav-LI a:hover {
+    color: var(--Hover-Text-Colour);
+    transition-duration: .4s;
+    cursor: pointer;
+}
+
+.Nav-Left-Side,
+.Nav-Right-Side:hover {
+    color: var(--Hover-Text-Colour);
+    transition-duration: .4s;
+    cursor: pointer;
+}
+
+
+/* -----------------Header-section------------------------------ */
+section.Header-Section {
+    display: flex;
+    justify-content: center;
+    margin: 78px;
+}
+
+.Header-H5 {
+    color: var(--Secondary-Text-Colour);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.Header-H2 {
+    font-size: 55px;
+    margin: 20px 0px 40px;
+}
+
+.Header-H6 {
+    font-size: 18px;
+}
+
+.Header-H6:hover {
+    color: var(--Hover-Text-Colour);
+    transition-duration: .4s;
+    cursor: pointer;
+}
+
+
+/* ------------------Card-Section------------------------------- */
+.Cards-Section {
+    background-color: var(--Background-Colour);
+}
+
+.Cards-Container {
+    padding: 0px 150px;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    display: flex;
+    padding: 0px 0px 100px 0px;
+}
+
+.Cards-H5 {
+    letter-spacing: 5px;
+    ;
+    color: var(--Secondary-Text-Colour);
+    text-transform: uppercase;
+}
+
+.Cards-H2 {
+    margin: 20px 0px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.Cards-H6 {
+    color: var(--Secondary-Text-Colour);
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.Cards-H6:hover {
+    color: var(--Hover-Secondary-Text-Colour);
+    transition-duration: .4s;
+    cursor: pointer;
+}
+
+.image {
+    height: auto;
+    width: 20vw;
+    margin: 0px 60px;
+}
+
+.image:hover {
+    transform: scale(1.05);
+    transition-duration: 0.4s;
+}
+
+.card-left-side {
+    padding: 0px 100px;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    position: relative;
+}
+
+.card-1::before {
+    content: "01";
+    font-size: 200px;
+    font-weight: 700;
+    position: absolute;
+    opacity: 10%;
+    top: -120px;
+    left: -35px;
+}
+
+
+.card-2::before {
+    content: "02";
+    font-size: 200px;
+    font-weight: 700;
+    position: absolute;
+    opacity: 10%;
+    top: -120px;
+    left: 420px;
+}
+
+.card-3::before {
+    content: "03";
+    font-size: 200px;
+    font-weight: 700;
+    position: absolute;
+    opacity: 10%;
+    top: -120px;
+    left: -45px;
+}
+
+
+/* ---------------=--Footer-Section----------------------------- */
+.Footer-Section {
+    background-color: var(--Background-Colour);
+}
+
+.Footer-Container,
+.Footer-Rightside {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Upper-Section {
+    margin: 20px 0px 80px;
+}
+
+.Lower-Section {
+    color: rgb(173, 171, 171);
+}
+
+.Footer-Container {
+    padding: 50px 150px;
+}
+
+.Footer-Container .Footer-Rightside {
+    padding-right: 65px;
+}
+
+.Footer-H5 {
+    color: var(--Secondary-Text-Colour);
+    font-size: 18px;
+}
+
+.Footer-H5:hover {
+    color: var(--Hover-Secondary-Text-Colour);
+    transition-duration: .4s;
+    cursor: pointer;
+}
+
+.more-on-mntn {
+    margin-left: 60px;
+}
+
+.Footer-Li {
+    font-size: 15px;
+    margin: 10px 0px;
+    list-style-type: none;
+}
+
+.Footer-Li:hover {
+    color: var(--Hover-Text-Colour);
+    transition-duration: .4s;
+    cursor: pointer;
+}
+
+
+/* ------------------ Responsive Design-Section ------------------ */
+@media (max-width: 1024px) {
+    .Div-Container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .Cards-Container {
+        padding: 0 60px;
+    }
+
+    .card-left-side {
+        padding: 0 40px;
+    }
+
+    .image {
+        width: 30vw;
+        margin: 0 30px;
+    }
+
+    .Footer-Container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Footer-Rightside {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .more-on-mntn {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Div-Container {
+        padding: 30px;
+    }
+
+    .Nav-Ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Header-H2 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+
+    .card-left-side,
+    .card-right-side {
+        padding: 20px;
+    }
+
+    .image {
+        width: 60vw;
+        margin: 20px 0;
+    }
+
+    .Cards-H2 {
+        font-size: 24px;
+    }
+
+    .Footer-Container {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Header-H2 {
+        font-size: 28px;
+    }
+
+    .image {
+        width: 80vw;
+    }
+
+    .Cards-Container {
+        padding: 0 20px;
+    }
+
+    .Footer-Container {
+        padding: 20px;
+    }
+
+    .Footer-H5 {
+        font-size: 16px;
+    }
+
+    .Footer-Li {
+        font-size: 14px;
+    }
+}
